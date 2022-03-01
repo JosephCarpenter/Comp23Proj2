@@ -19,6 +19,8 @@ public class SheepMovement : MonoBehaviour
     private float movementX;
     private float movementY;
     private Vector3 movement;
+
+    private GameController gameController;
     
     // Start is called before the first frame update
     void Start() {
@@ -32,6 +34,11 @@ public class SheepMovement : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         speed = 0;
         NewMovement();
+
+        // For updating score
+        if (GameObject.FindWithTag ("GameController") != null) { gameController = GameObject.FindWithTag ("GameController").GetComponent<GameController>();
+        }
+    
     }
 
     void FixedUpdate () {
@@ -60,4 +67,5 @@ public class SheepMovement : MonoBehaviour
         movementY = Random.Range(-10, 10);
         movement = new Vector3 (movementX, 0.0f, movementY); 
     }
+    
 }
