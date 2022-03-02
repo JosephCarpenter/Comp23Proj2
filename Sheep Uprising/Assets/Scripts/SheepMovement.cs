@@ -61,11 +61,20 @@ public class SheepMovement : MonoBehaviour
         }
 	}
     
+    IEnumerator OnCollisionEnter(Collision other) {
+        if (other.gameObject.tag == "Finish") {
+            yield return new WaitForSeconds(0.5f);
+            Destroy(gameObject);
+            gameController.AddScore (1); 
+        }
+    }
+
     void NewMovement() {
         buildingSpeed = true;
         movementX = Random.Range(-10, 10);
         movementY = Random.Range(-10, 10);
         movement = new Vector3 (movementX, 0.0f, movementY); 
     }
+    
     
 }
