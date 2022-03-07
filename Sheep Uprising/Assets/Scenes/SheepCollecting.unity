@@ -380,6 +380,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 36fa2a7b7b0fed346bc202119991cc8b, type: 2}
+    - target: {fileID: 65702495048144492, guid: 76d5cb5b5f1b62c44b5323bba7e4010c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 76d5cb5b5f1b62c44b5323bba7e4010c, type: 3}
       propertyPath: m_Name
       value: house
@@ -2348,6 +2352,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 2db2fc7080a6ebd4799860c2d6a40a50, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: db4b2000f1c86a84293e89daa752e9ec, type: 2}
     - target: {fileID: 65702495048144492, guid: 2db2fc7080a6ebd4799860c2d6a40a50, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -2644,6 +2652,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 2db2fc7080a6ebd4799860c2d6a40a50, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: db4b2000f1c86a84293e89daa752e9ec, type: 2}
     - target: {fileID: 65702495048144492, guid: 2db2fc7080a6ebd4799860c2d6a40a50, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -3715,6 +3727,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 2db2fc7080a6ebd4799860c2d6a40a50, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: db4b2000f1c86a84293e89daa752e9ec, type: 2}
     - target: {fileID: 65702495048144492, guid: 2db2fc7080a6ebd4799860c2d6a40a50, type: 3}
       propertyPath: m_IsActive
       value: 0
