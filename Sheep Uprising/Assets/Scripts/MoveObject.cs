@@ -6,13 +6,18 @@ public class MoveObject : MonoBehaviour
 {
     
     public GameObject item;
-    public GameObject tempParent;
-    public Transform guide;
+    
+    private GameObject tempParent;
+    private Transform guide;
+    private GameObject sheepParent;
 
     // Start is called before the first frame update
     void Start()
     {
         item.GetComponent<Rigidbody>().useGravity = true;
+        sheepParent = transform.parent.gameObject;
+        tempParent = GameObject.FindWithTag("guide");
+        guide = tempParent.transform;
 
     }
 
@@ -33,7 +38,7 @@ public class MoveObject : MonoBehaviour
     void OnMouseUp() {
         item.GetComponent<Rigidbody>().useGravity = true;
         item.GetComponent<Rigidbody>().isKinematic = false;
-        item.transform.parent = null;
+        item.transform.parent = sheepParent.transform;
         item.transform.position = guide.transform.position;
 
     }

@@ -8,6 +8,8 @@ TagManager:
   - RandomPoint
   - Walls
   - finish
+  - plane
+  - guide
   layers:
   - Default
   - TransparentFX

@@ -11,18 +11,18 @@ public class CubeScript : MonoBehaviour
 
     private void Start()
     {
-        nma = this.GetComponent<NavMeshAgent>();
-        RandomPoint = GameObject.FindGameObjectsWithTag("RandomPoint");
-        Debug.Log("RandomPoints = " + RandomPoint.Length.ToString());
+        // nma = this.GetComponent<NavMeshAgent>();
+        // RandomPoint = GameObject.FindGameObjectsWithTag("RandomPoint");
+        // Debug.Log("RandomPoints = " + RandomPoint.Length.ToString());
     }
 
     private void Update()
     {
-        if (nma.hasPath == false)
-        {
-            CurrentRandom = Random.Range(0, RandomPoint.Length + 1);
-            nma.SetDestination(RandomPoint[CurrentRandom].transform.position);
-            Debug.Log("Moving to RandomPoint " + CurrentRandom.ToString());
-        }
+        // if (nma.hasPath == false)
+        // {
+        //     CurrentRandom = Random.Range(0, RandomPoint.Length - 1);
+        //     nma.SetDestination(RandomPoint[CurrentRandom].transform.position);
+        //     Debug.Log("Moving to RandomPoint " + CurrentRandom.ToString());
+        // }
     }
 }

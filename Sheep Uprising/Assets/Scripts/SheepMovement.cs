@@ -36,7 +36,7 @@ public class SheepMovement : MonoBehaviour
         NewMovement();
 
         // For updating score
-        if (GameObject.FindWithTag ("GameController") != null) { gameController = GameObject.FindWithTag ("GameController").GetComponent<GameController>();
+        if (GameObject.FindWithTag("GameController") != null) { gameController = GameObject.FindWithTag ("GameController").GetComponent<GameController>();
         }
     
     }
